@@ -1,0 +1,12 @@
+---
+# tasks file for webserver
+- package:
+        name: "{{php}}"
+        state: present
+- package:
+        name: "{{package_name}}"
+        state: present
+- copy:
+        src: "index.php"
+        dest: "/var/www/html"
+  notify: web service
