@@ -1,0 +1,7 @@
+---
+# handlers file for loadbalancer
+- name: "loadbalancer"
+  service:
+        name: "{{ service_name }}"
+        state: restarted
+
