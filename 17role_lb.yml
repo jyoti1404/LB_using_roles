@@ -1,0 +1,6 @@
+- hosts: web
+  roles:
+          - role: "webserver"
+- hosts: LB
+  roles:
+          - role: "loadbalancer"
